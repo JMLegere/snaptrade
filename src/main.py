@@ -42,7 +42,7 @@ def main():
         query_params={"userId": user_id, "userSecret": user_secret}
     )
     pprint(holdings.body)
-    
+
     deleted_response = snaptrade.authentication.delete_snap_trade_user(
     query_params={"userId": user_id}
     )
